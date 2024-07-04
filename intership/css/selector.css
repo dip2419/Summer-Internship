@@ -1,0 +1,27 @@
+
+/* Universal selector */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* element selector */
+h1{
+    color: red;
+}
+
+/* Id selector */
+#heading{
+    color: blue;
+}
+
+/* Class selector */
+.heading{
+    color: blueviolet;
+}
+
+/* Grouping selector */
+
+h2, h3, p{
+    color: rgb(255, 0, 0);
+}

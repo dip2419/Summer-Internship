@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <script
+      src="https://kit.fontawesome.com/bd630bbc0c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Header-start -->
+    <header class="shadow-lg">
+      <div class="container">
+        <nav class="flex justify-between items-center">
+          <a href="#"
+            ><img src="./images/logo.svg" alt="Logo" class="w-24 h-16"
+          /></a>
+          <div
+            class="collapse-menu lg:flex lg:items-center fixed inset-0 bg-black text-white lg:text-black pt-[120px] lg:pt-0 p-10 lg:p-0 lg:bg-transparent lg:static"
+            id="navBarOpenCloseContent"
+          >
+            <button
+              class="navbar-close lg:hidden border p-2 fixed left-10 top-10"
+              onclick="toggleDiv()"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.793 7.5 1.146 1.854l.708-.708L7.5 6.793l5.647-5.647.707.708L8.207 7.5l5.647 5.646-.707.707L7.5 8.208l-5.646 5.647-.708-.708z"
+                  fill="#fff"
+                />
+              </svg>
+            </button>
+            <ul
+              class="flex flex-col lg:flex-row gap-12 overflow-auto lg:overflow-hidden h-full lg:h-auto"
+            >
+              <li class="hover:text-[#EE4248]"><a href="#">Service</a></li>
+              <li class="hover:text-[#EE4248]"><a href="#">Product</a></li>
+              <li class="hover:text-[#EE4248]"><a href="#">Technology</a></li>
+              <li class="hover:text-[#EE4248] flex"><a href="#">About</a><img src="./images/dropdown.svg" alt="icon" class="ps-2 hidden lg:flex"></li>
+              <li class="hover:text-[#EE4248] flex"><a href="#">Client</a><img src="./images/dropdown.svg" alt="icon" class="ps-2 hidden lg:flex"></li>
+          
+              <li class="hover:text-[#EE4248]"><a href="#">Partner</a></li>
+            </ul>
+          </div>
+          <ul class="hidden lg:flex gap-5">
+            <li>
+              <img
+                src="./images/i-1.svg"
+                alt="icon"
+                class="w-[20px] h-[19px]"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/i-2.svg"
+                alt="icon"
+                class="w-[20px] h-[19px]"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/i-3.svg"
+                alt="icon"
+                class="w-[20px] h-[19px]"
+              />
+            </li>
+          </ul>
+          <button
+            class="navbar-open lg:hidden"
+            id="navBarOpenBtn"
+            onclick="toggleDiv()"
+          >
+            <img src="images/slider-icon.svg" alt="" />
+          </button>
+        </nav>
+      </div>
+    </header>
+    <!-- Header-end -->
+
+    <!-- section-start -->
+    <section class="bg-[#F2F2F2A6] py-16">
+      <div class="container">
+        <div
+          class="flex flex-wrap lg:flex-nowrap justify-center xl:flex-nowrap w-full gap-4 items-center"
+        >
+          <div
+            class="text-[32px] lg::text-[48px] w-full text-center lg:text-start xl:text-start"
+          >
+            <h1>
+              to grow the business together
+              <strong
+                >Continous efforts through improvement and innovation</strong
+              >
+            </h1>
+          </div>
+          <div class="shrink-0 w-[235px] h-[103px] lg:w-[419px] lg:h-[182px]">
+            <img src="./images/logo-1.svg" alt="logo" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section-end-->
+
+    <!-- Section-start -->
+    <section>
+      <div class="container mx-auto py-10">
+        <h1 class="text-[32px] leading-[45.02px] font-medium">
+          About Dwidasa Samsara Indonesia(DSI)
+        </h1>
+        <div class="pt-10 text-justify text-[18px] leading-[25.32px]">
+          <p>
+            <strong class="text-rose-600"
+              >Dwidasa Samsara Indonesia (DSI)</strong
+            >
+            was firstly established in 2010 by the founders, who each of them
+            has a common end objective to innovate new creations by making the
+            most of the ever-growing information technology through DSI’s
+            distinct front-end based application concept. Managed by a team of
+            professional experts with extensive experience and impressive track
+            records, DSI believes that continuous improvements and innovations
+            assure your business to run effectively and efficiently.
+          </p>
+          <p class="pt-5">
+            Then from that perspective, we named our company
+            <strong class="text-rose-600">‘Dwidasa Samsara Indonesia’</strong>,
+            which means continuous efforts through improvement and innovation
+            will help us evolving toward the forefront position in Indonesia. In
+            responding to various clients’ specifi c requirements, DSI will work
+            consistently in optimizing its existing reliable resources combined
+            with well-trained team supports, to present particularly the dynamic
+            fi nancial industry sector with its customized solutions.
+          </p>
+          <p class="pt-5">
+            Considering the complexity of the clients’ demand, however
+            notwithstanding the size of the organization,
+            <strong class="text-rose-600">DSI</strong> is always committed to
+            work effectively for growing the business together with business
+            partners, through its innovative and collaborative methodology while
+            assuring a fast response time to customers. That way, the final
+            output is delivered in a secured and timely manner, towards the
+            attainment of the most effi cient outcome.
+          </p>
+          <p class="pt-5">
+            For <strong class="text-rose-600">DSI</strong>, both technical and
+            non-technical supports are as important as the partnership we have
+            built with your business. Among others, our partnership portfolio
+            has been built with various business segments such as Internet
+            Service Provider (ISP), Application Service Provider (ASP) and
+            Payment Network corporations. Through such partnerships, we are
+            evolving together to a new height of innovative explorations and
+            effective improvements with purpose to having a sustainable business
+            operation cycles.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- section-end -->
+
+    <!-- section-start -->
+    <section class="bg-[#F2F2F2A6] py-16">
+      <div class="container">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 items-center justify-items-center lg:justify-items-start"
+        >
+          <div>
+            <img
+              src="./images/video-1.svg"
+              alt="video"
+              class="md:w-[560px] md:h-[413px]"
+            />
+          </div>
+          <div class="pt-10 lg:pt-0 lg:pl-10">
+            <h4 class="text-[32px] font-medium pb-5">Our Future Prespective</h4>
+            <ul>
+              <li>
+                <div class="flex">
+                  <img src="./images/i-4.svg" alt="icon" /><strong
+                    class="text-[24px] font-medium ps-3 rounded-[5px]"
+                    >Vision</strong
+                  >
+                </div>
+                <p class="text-18px font-normal ps-12">
+                  To become the leading application service provider (ASP)
+                  focusing on front-end application delivered for Indonesia’s
+                  banking and fi nancial industry.
+                </p>
+              </li>
+              <li class="py-5">
+                <div class="flex">
+                  <img src="./images/i-5.svg" alt="icon" /><strong
+                    class="text-[24px] font-medium ps-3"
+                    >Mission</strong
+                  >
+                </div>
+                <p class="text-18px font-normal ps-12">
+                  To grow the business together with clients by providing
+                  enhanced services and wide delivery channel to end-users.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section-end -->
+
+    <!-- section-start -->
+    <section class="py-16 bg-[#EE4248] text-white">
+      <div class="container">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 items-center justify-items-center lg:justify-items-start"
+        >
+          <div class="lg:pr-10">
+            <h1 class="text-[32px] font-medium">DSI Culture</h1>
+            <img src="./images/line.svg" alt="line" class="pb-5" />
+            <div class="text-[18px] font-medium text-justify">
+              <p class="pt-5">
+                Our commitment to innovation depends on everyone being
+                comfortable sharing ideas and opinions. Every employee is a
+                hands-on contributor, and everyone wears several hats. Because
+                we believe that each DSI employee is an equally important part
+                of our success.
+              </p>
+              <p class="pt-5">
+                We deeply understand that the average working person spends at
+                least eight hours or even more, so we spend one third even half
+                of our lives to work in a day. therefore we strive to provide a
+                fun and positive environment in addition to a wide range of
+                benefits to provide safety so they can enjoy working at Dwidasa
+                Samsara Indonesia.
+              </p>
+            </div>
+          </div>
+          <div class="lg:justify-self-end pt-10 lg:pt-0">
+            <img
+              src="./images/video-2.svg"
+              alt="video"
+              class="w-[560px] h-[364]"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section-end -->
+
+    <!-- section-start -->
+    <section class="py-16">
+      <div class="container">
+        <h1 class="font-medium text-[32px] text-center">Contact Us</h1>
+        <div class="grid grid-cols-1 lg:grid-cols-2 pt-10 items-center">
+          <iframe
+            class="w-full aspect-video"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12080.73732861526!2d-74.0059418!3d40.7127847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMDA2JzEwLjAiTiA3NMKwMjUnMzcuNyJX!5e0!3m2!1sen!2sus!4v1648482801994!5m2!1sen!2sus"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          >
+          </iframe>
+
+          <ul class="lg:justify-self-end pt-10 lg:pt-0 lg:pl-10">
+            <li class="py-5 flex">
+              <img src="./images/i-6.svg" alt="icon" />
+              <div>
+                <strong class="text-[24px] font-medium ps-5">Alamat</strong>
+                <p class="text-18px font-normal ps-5 pt-2">
+                  JI. Halim Perdana Kusuma , Ring Road Bangkalan, Madur, Jawa
+                  Timur.
+                </p>
+              </div>
+            </li>
+            <li class="py-5 flex">
+              <img src="./images/i-7.svg" alt="icon" />
+              <div>
+                <strong class="text-[24px] font-medium ps-5">Email</strong>
+                <p class="text-18px font-normal ps-5 pt-2">sekolahku@sch.id</p>
+              </div>
+            </li>
+            <li class="py-5 flex">
+              <img src="./images/i-8.svg" alt="icon" />
+              <div>
+                <strong class="text-[24px] font-medium ps-5">Telpon</strong>
+                <p class="text-18px font-normal ps-5 pt-2">(+91) 12345-54321</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- section-end -->
+
+    <!-- section-start -->
+    <section>
+      <div class="container ptt-16 pb-5">
+        <div class="grid grid-cols-1 md:grid-cols-7 gap-4">
+          <div class="col-span-2">
+            <img src="./images/logo-3.svg" alt="logo" class="pb-2" />
+            <strong class="text-[18px] font-medium py-2"
+              >PT Dwidasa Samsara Indonesia</strong
+            >
+            <p class="pt-2">
+              Ruko Jalur Sutera 29A No. 53 Alam Suter Serpong, Tangerang 15323
+            </p>
+          </div>
+          <div class="col-span-2 mt-5 lg:mt-0 md:relative md:top-7 lg:top-5">
+            <h4 class="text-[24px] font-medium pb-1">Contact</h4>
+            <p class="pt-2 pb-1">Phone: +91 12345 54321</p>
+            <p class="pb-1">fax: +91 12345 78965</p>
+            <p class="">Email: community@dwidasa.com</p>
+          </div>
+          <div
+            class="col-span-3 flex flex-wrap gap-4 lg:items-end mt-5 lg:mt-0"
+          >
+            <a href="#" class="h-fit"
+              ><img
+                src="./images/brand-logo-1.svg"
+                alt="brand-logo"
+                class="w-[133.35px] h-[34.92px] lg:w-[133.24px] h-[41.05px]"
+            /></a>
+            <a href="#" class="h-fit"
+              ><img
+                src="./images/brand-logo-2.svg"
+                alt="brand-logo"
+                class="w-[98.03px] h-[41.66px] lg:w-[115.23px] h-[48.97px]"
+            /></a>
+            <a href="#" class="h-fit"
+              ><img
+                src="./images/brand-logo-6.svg"
+                alt="brand-logo"
+                class="w-[66.17px] h-[36.76px] lg:w-[77.78px] h-[43.21px]"
+            /></a>
+            <a href="#" class="h-fit"
+              ><img
+                src="./images/brand-logo-3.svg"
+                alt="brand-logo"
+                class="w-[66.78px] h-[37.37px] lg:w-[78.5px] h-[43.93px]"
+            /></a>
+            <a href="#" class="h-fit"
+              ><img
+                src="./images/brand-logo-4.svg"
+                alt="brand-logo"
+                class="w-[122.54px] h-[18.81px] lg:w-[144.04px] h-[22.12px] lg:mb-2"
+            /></a>
+            <a href="#" class="h-fit"
+              ><img
+                src="./images/brand-logo-5.svg"
+                alt="brand-logo"
+                class="w-[122.54px] h-[21.5px] lg:w-[144.04px] h-[25.27px] lg:mb-2"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section-end -->
+
+    <footer class="bg-[#EE4248] text-white py-5">
+      <div class="flex justify-center content-center font-normal text-[18px]">
+        Copyright © 2015 - Dwidasa Samsara Indonesia
+      </div>
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

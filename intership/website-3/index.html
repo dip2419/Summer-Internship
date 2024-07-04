@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container mx-auto w-full max-w-[1132px] px-4">
+        <nav class="flex items-center justify-between py-[33px]">
+          <a href="">
+            <img src="./images/logo.png" alt="Brand Logo" class="w-full max-w-[206px]"/>
+          </a>
+          <div
+            id="navBarOpenCloseContent"
+            class="hidden lg:block bg-black lg:bg-transparent fixed inset-0 z-[99] lg:static p-10 lg:p-0"
+          >
+            <button
+              onclick="toggleDiv()"
+              class="flex items-center justify-center shrink-0 lg:hidden text-white"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.793 7.5 1.146 1.854l.708-.708L7.5 6.793l5.647-5.647.707.708L8.207 7.5l5.647 5.646-.707.707L7.5 8.208l-5.646 5.647-.708-.708z"
+                  fill="#fff"
+                />
+              </svg>
+            </button>
+            <ul
+              class="flex flex-col lg:flex-row lg:items-center lg:justify-center gap-[50px] mt-12 lg:mt-0 overflow-auto h-full lg:h-auto"
+            >
+              <li>
+                <a
+                  href=""
+                  class="hover:underline text-white lg:text-black"
+                  title="Home"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="hover:underline text-white lg:text-black"
+                  title="Product"
+                  >Product</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="hover:underline text-white lg:text-black"
+                  title="About"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="hover:underline text-white lg:text-black"
+                  title="Contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a
+            href=""
+            class="bg-[#0285E4] text-white flex items-center justify-center text-center shrink-0 h-[40px] md:h-[52px] px-[20px] md:px-[45px] rounded-[50px] mr-10 lg:mr-0 text-[10px] md:text-[18px]"
+            >Sign Up</a
+          >
+          <button
+            onclick="toggleDiv()"
+            class="flex items-center justify-center shrink-0 lg:hidden absolute right-3"
+          >
+            <img src="./images/slider-icon.svg" alt="" />
+          </button>
+        </nav>
+      </div>
+    </header>
+
+
+    <section>
+      <div class="container mx-auto w-full max-w-[1132px] px-4">
+        <div class="flex flex-col justify-center text-center items-center">
+          <h1 class="text-[40px] lg:text-[54px] font-[700] pt-[87px] pb-4">
+            Lightning fast prototyping
+          </h1>
+          <p class="w-full max-w-[577px] text-[20px] font-normal pt-4 pb-8 lg:pb-4">
+            Most calendars are designed for teams. Slate is designed for
+            freelancers who want a simple way to plan their schedule.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mx-auto w-full max-w-[1132px] px-4">
+        <div class="flex flex-col items-center justify-center relative">
+          <img src="./images/bg.svg" alt="bg">
+          <button
+          type="button"
+          class="border-0 outline-0 rounded-[50px] text-white flex justify-center items-center bg-[#0285E4] px-[50px] md:px-[80px] h-[40px] md:h-[50px] shrink-0 absolute top-[30px] lg:top-[70px]"
+        >
+          Try for free
+        </button>
+        </div>
+      </div>
+    </section>
+
+    <section class=" lg:-mt-[100px]">
+      <div class="container mx-auto w-full max-w-[1132px]">
+        <img src="./images/bg-2.svg" alt="background">
+      </div>
+    </section>
+
+    <section>
+      <div class="container mx-auto w-full max-w-[1132px]">
+        <div class="bg-[#0285E4]">
+          <h1 class="text-white text-[40px] flex justify-center items-center py-[50px] text-center  min-[560px]:px-[163px]">Fastest way to navigate</h1>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-[31px] md:gap-[120px] mx-[16px] min-[560px]:mx-[90px] md:mx-[181px] lg:mx-[100px]  xl:mx-[181px]">
+              <div class="p-[20px] md:p-[40px] w-full bg-white rounded-[10px]">
+                <img src="./images/img-1.svg" alt="img">
+                <h2 class="text-[24px] font-[700] w-full max-w-[209px] my-[11px] p-[10px]">Design with real data</h2>
+                <p class="text-[16px] font-[400] w-full max-w-[276px] p-[10px] mb-[11px]">Ever wondered if you're too reliant 
+                  on a client for work? Slate helps 
+                  you identify.</p>
+                  
+                    <div class="px-[10px] pt-[5px]">
+                      <div class="flex justify-between">
+                        <h6>Facebook</h6>
+                        <strong>35,929</strong>
+                      </div>
+                      <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-300 mb-[24px]">
+                        <div class="bg-green-500 h-2 rounded-full w-[50%]"></div>
+                      </div>
+                      <div class="flex justify-between">
+                        <h6>Twitter</h6>
+                        <strong>35,929</strong>
+                      </div>
+                      <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-300 mb-[24px]">
+                        <div class="bg-blue-500 h-2 rounded-full w-[20%]"></div>
+                      </div>
+                      <div class="flex justify-between">
+                        <h6>Behance</h6>
+                        <strong>35,929</strong>
+                      </div>
+                      <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-300 mb-[24px] ">
+                        <div class="bg-purple-500 h-2 rounded-full w-[70%]"></div>
+                      </div>
+                      <div class="flex justify-between">
+                        <h6>Instagram</h6>
+                        <strong>35,929</strong>
+                      </div>
+                      <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-300 mb-[24px]">
+                        <div class="bg-yellow-300 h-2 rounded-full w-[10%]"></div>
+                      </div>
+                    </div>
+
+                  
+              </div>
+              <div class="p-[20px] md:p-[40px] w-full bg-white  rounded-[10px]">
+                <img src="./images/img-2.svg" alt="img">
+                <h2 class="text-[24px] font-[700] w-full max-w-[233px] my-[11px] p-[10px]">Work at the speed of thought.</h2>
+                <p class="text-[16px] font-[400] w-full max-w-[276px] p-[10px] mb-[11px]">Ever wondered if you're too reliant 
+                  on a client for work? Slate helps 
+                  you identify.</p>
+                  
+                    <div class="px-[10px] py-[25px] flex justify-center items-center">
+                      <img src="./images/img-3.svg" alt="">
+                    </div>
+
+                  
+              </div>
+          </div>
+
+        <div class="flex justify-center items-center"> 
+          <button
+            type="button"
+            class="border-0 outline-0 rounded-[50px] text-black flex justify-center items-center bg-white px-[50px] md:px-[80px] h-[40px] md:h-[50px] shrink-0 mt-[70px] mb-[50px]"
+          >
+            Try for free
+          </button>
+        </div>
+        </div>
+      </div>
+    </section>
+      
+    <section>
+      <div class="bg-[#E1F1FD] container mx-auto w-full max-w-[1132px]">
+        <div class="flex flex-col lg:flex-row justify-between items-center text-center lg:text-start px-8 md:px-[99px] lg:px-8 xl:px-[99px] pt-[85px]">
+          <div>
+            <h1 class="text-[40px] font-[700] pt-[116px] pb-[30px] md:pb-[15px] px-4 min-[560px]:mx-[100px] md:mx-0">OpenType feature and Variable fonts</h1>
+            <p class="text-[16px] mb-[30px] md:mb-0 px-4 min-[560px]:mx-[55px] md:mx-0">Most calendars are designed for teams. Slate is designed 
+              for freelancers who want a simple way to plan
+               their schedule.</p>
+               <div class="flex flex-wrap gap-2 pt-[15px] justify-center lg:justify-start mb-[60px] md:mb-0  min-[560px]:mx-[48px] md:mx-0">
+                <input type="email" name="email" placeholder="Enter Your Address Email" class="font-bold rounded-[50px] h-[52px] border-2 w-full  md:max-w-[250px] shrink-0 ps-5 pb-3 md:pb-0 pt-2 md:pt-0">
+                <button type="button" class="h-[52px] outline-0 border-0 bg-[#0285E4] rounded-[50px] text-white flex justify-center items-center w-full md:max-w-[130px] shrink-0">Subscribe</button>
+               </div>
+          </div>
+          
+          <img src="./images/mobile-half.svg" alt="" class=" hidden lg:flex">
+          <img src="./images/mobile-full.svg" alt="" class="flex lg:hidden">
+          
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mx-auto w-full max-w-[1132px]">
+        <div class="text-center flex flex-col justify-center items-center text-center">
+        <h1 class="text-center text-[40px] font-[700] pt-[110px] pb-[17px] px-8 min-[560px]:px-[160px] md:px-0">Work better together</h1>
+          <p class="w-full max-w-[571px] text-[16px] pb-[52px] px-4 min-[560px]:px-[149px] md:px-0">Being a freelancer is a rollercoaster of emotions. We built Slate to keep your 
+            freelance business less stressful. We'd love to show you what we're building...</p>
+            <div class="w-full  max-w-[250px] min-[560px]:max-w-[315px] md:max-w-[600px] lg:max-w-[757px] bg-gray-200 rounded-full h-[15px] dark:bg-gray-300 ">
+              <div class="bg-[#0285E4] h-[15px] rounded-full w-[70%]"></div>
+            </div>
+            <div class="flex justify-between w-full max-w-[250px] min-[560px]:max-w-[315px] md:max-w-[600px] lg:max-w-[757px] pt-[7px]">
+              <p>Facebook</p>
+              <strong>35,929</strong>
+            </div>
+           
+              <button
+                type="button"
+                class="border-0 outline-0 rounded-[50px] text-black flex justify-center items-center bg-[#0285E4] text-white px-[50px] md:px-[80px] h-[40px] md:h-[50px] shrink-0 mt-[50px] mb-[100px]"
+              >
+                Try for free
+              </button>
+           
+          </div>
+    </div>
+    </section>
+     
+    <footer>
+      <div class="bg-[#112D57] container mx-auto w-full max-w-[1132px]">
+        <div class="flex flex-col lg:flex-row justify-between items-center h-[316px] lg:h-[133px] pt-[42px] lg:pt-0 pb-[47px] lg:pb-0 lg:ps-[85px] lg:pe-[35px]">
+          <img src="./images/logo-2.png" alt="">
+          <div class="flex gap-[29px]">
+            <a href=""><img src="./images/twitter.svg" alt=""></a>
+            <a href=""><img src="./images/facebook.svg" alt=""></a>
+            <a href=""><img src="./images/limkdin.svg" alt=""></a>
+          </div>
+          <p class="text-white text-end">Just type what's on your mind and we'll</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>

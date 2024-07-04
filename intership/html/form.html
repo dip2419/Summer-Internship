@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+
+  <body>
+    <fieldset>
+      <legend style="text-align: center">Form:</legend>
+      <form>
+        <div class="label">
+          <label for="userid">User ID</label>
+          <input type="text" value="12345" for="userid" id="userid" readonly />
+        </div>
+        <br />
+        <div class="label">
+          <label for="username">Username <font color="red">*</font></label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="abc@gmail.com"
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            title="example@gmail.com"
+            required
+          />
+        </div>
+        <br />
+        <div class="label">
+          <label for="password">Password <font color="red">*</font></label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Enter at least 8 character, one uppercase, one lowercase and symbole"
+            required
+          />
+        </div>
+        <br />
+        <div class="label">
+          <label for="gender">Gender</label>
+          <input type="radio" name="gender" id="male" checked />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" />
+          <label for="female">FeMale</label>
+        </div>
+        <br />
+        <div class="label">
+          <label for="country">Country</label>
+          <select name="country" id="country">
+            <option value="India">India</option>
+            <option value="America" disabled>America</option>
+            <option value="Germany">Germany</option>
+          </select>
+        </div>
+        <br />
+        <div class="label">
+          <label for="lang">Known language</label>
+          <input type="checkbox" name="english" id="english" />
+          <label for="english">English</label>
+          <input type="checkbox" name="hindi" id="hindi" />
+          <label for="hindi">Hindi</label>
+          <input type="checkbox" name="gujarati" id="gujarati" />
+          <label for="gujarati">Gujarati</label>
+        </div>
+        <br />
+        <div class="button">
+          <input type="submit" value="submit" />
+          <input type="reset" value="Reset" />
+        </div>
+      </form>
+    </fieldset>
+  </body>
+</html>

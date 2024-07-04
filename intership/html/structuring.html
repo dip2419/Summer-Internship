@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structuring</title>
+
+    <style>
+        header{
+            width: 100%;
+            background-color: gray;
+            color: white;
+        }
+        nav{
+            background-color: aqua;
+            text-align: center;
+        }
+        aside{
+            float: left;
+            height: 500px;
+            width: 20%;
+            background-color: brown;
+            text-align: center;
+        }
+        article{
+            float: right;
+            width:80%;
+            height: 500px;
+            text-align: center;
+            background-color: blueviolet;
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer{
+            background-color: black;
+            color: white;
+        }
+       
+    </style>
+</head>
+<body>
+    <header style="border: 1px solid; text-align: center;">
+        <h1>Header</h1>
+    </header>
+    <nav>
+        <h1>Nav</h1>
+    </nav>
+
+    <aside>
+        <section>
+            <h1>Side Bar</h1>
+        </section>
+    </aside>
+    <section>
+        <article>
+            <h1>Content</h1>
+        </article>
+    </section>
+    <footer style="border: 1px solid; text-align: center;">
+        <h1>Footer</h1>
+    </footer>
+</body>
+</html>

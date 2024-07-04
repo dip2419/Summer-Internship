@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Website</title>
+    <style>
+      .font {
+       
+          font-family: "Fredericka the Great", serif;
+          font-weight: 400;
+          font-style: normal;
+        }
+  
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container mx-auto px-4 w-full">
+        <nav class="flex justify-between items-center">
+          <div class="font text-[40px]">elita</div>
+          <div class="collapes-menu" id="navBarOpenCloseContent">
+            <button
+              onclick="toggleDiv()"
+              class="flex items-center justify-center shrink-0 lg:hidden text-white"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.793 7.5 1.146 1.854l.708-.708L7.5 6.793l5.647-5.647.707.708L8.207 7.5l5.647 5.646-.707.707L7.5 8.208l-5.646 5.647-.708-.708z"
+                  fill="#fff"
+                />
+              </svg>
+            </button>
+            <ul class="flex gap-8 font-bold text-black">
+              <li><a href=""></a>Home page</li>
+              <li><a href=""></a>Shortcodes</li>
+              <li><a href="">Gallery</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contant</a></li>
+            </ul>
+            <button
+            onclick="toggleDiv()"
+            class="flex items-center justify-center shrink-0 lg:hidden absolute right-3"
+          >
+            <img src="./images/slider-icon.svg" alt="" />
+          </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

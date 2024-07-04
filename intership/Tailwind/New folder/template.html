@@ -1,0 +1,364 @@
+<table
+  style="
+    width: 400px;
+    font-size: 8pt;
+    font-family: Verdana, sans-serif;
+    background: transparent !important;
+  "
+  cellpadding="0"
+  cellspacing="0"
+  border="0"
+  class="ng-scope"
+>
+  <tbody>
+    <tr>
+      <td
+        style="
+          width: 115px;
+          font-size: 8pt;
+          font-family: Verdana, sans-serif;
+          vertical-align: top;
+          text-align: center;
+        "
+        valign="top"
+      >
+        <span ng-if="showField('photo')" class="ng-scope">
+          <img
+            ng-src="https://www.mail-signatures.com/signature-generator/img/templates/professional-hr/photo.png"
+            alt="photograph"
+            width="135"
+            border="0"
+            style="border: 0; height: auto; width: 140px"
+            src="https://ik.imagekit.io/techuptodate/Saeculum_Solutions_Logo.png?updatedAt=1678797001754"
+          />
+        </span>
+      </td>
+      <td style="width: 80px"></td>
+      <td
+        style="
+          width: 260px;
+          font-size: 8pt;
+          line-height: 11pt;
+          color: #444444;
+          font-family: Verdana, sans-serif;
+          vertical-align: top;
+        "
+        valign="top"
+      >
+        <span
+          style="
+            padding: 0px;
+            margin: 0px;
+            font-size: 11pt;
+            line-height: 13pt;
+            font-family: Verdana, sans-serif;
+            color: #1e3078;
+            font-weight: bold;
+          "
+          class="ng-binding"
+          >Nirav Patel</span
+        >
+        <span
+          ng-if="showField('title')"
+          style="
+            padding: 0px;
+            margin: 0px;
+            font-family: Verdana, sans-serif;
+            font-size: 8pt;
+            line-height: 14pt;
+            color: #62b9e9;
+          "
+          class="ng-binding ng-scope"
+          ><br />Jr. &amp; Software Devloper<br
+        /></span>
+
+        <span
+          ng-if="showField('mobile')"
+          style="
+            font-size: 8pt;
+            line-height: 11pt;
+            color: #1e425a;
+            font-family: Verdana, sans-serif;
+          "
+          class="ng-binding ng-scope"
+          ><br />M: (800) 555-0299</span
+        >
+
+        <span
+          ng-if="showField('phone')"
+          style="
+            font-size: 8pt;
+            line-height: 11pt;
+            color: #1e425a;
+            font-family: Verdana, sans-serif;
+          "
+          class="ng-binding ng-scope"
+          ><br />l:
+          <a
+            href="https://in.linkedin.com/company/saeculumsolutions"
+            target="_blank"
+            style="
+              font-size: 8pt;
+              line-height: 12pt;
+              padding: 0px;
+              margin: 0px;
+              color: #1e425a;
+              text-decoration: none;
+            "
+            ><span
+              style="
+                text-decoration: none;
+                font-size: 8pt;
+                line-height: 11pt;
+                color: #1e425a;
+                font-family: Verdana, sans-serif;
+              "
+              class="ng-binding"
+              >saeculumsolutions</span
+            ></a
+          ></span
+        >
+
+        <span
+          ng-if="showField('email')"
+          style="
+            font-size: 8pt;
+            line-height: 11pt;
+            color: #1e425a;
+            font-family: Verdana, sans-serif;
+          "
+          class="ng-scope"
+          ><br />E:
+          <a
+            href="mailto:john.doe@my-company.com"
+            style="
+              font-size: 8pt;
+              line-height: 12pt;
+              padding: 0px;
+              margin: 0px;
+              color: #1e425a;
+              text-decoration: none;
+            "
+            ><span
+              style="
+                text-decoration: none;
+                font-size: 8pt;
+                line-height: 11pt;
+                color: #1e425a;
+                font-family: Verdana, sans-serif;
+              "
+              class="ng-binding"
+              >john.doe@my-company.com</span
+            ></a
+          >
+
+          <span
+            ng-if="showField('company')"
+            style="
+              font-family: Verdana, sans-serif;
+              font-size: 8pt;
+              line-height: 11pt;
+              color: #1e425a;
+            "
+            class="ng-binding ng-scope"
+            ><br />My Company<span
+              ng-if="isAnyFieldEntered('address1, address2')"
+              class="ng-scope"
+              >,</span
+            >
+
+            <span
+              ng-if="showField('address1')"
+              style="
+                font-size: 8pt;
+                line-height: 11pt;
+                font-family: Verdana, sans-serif;
+                color: #1e425a;
+              "
+              class="ng-binding ng-scope"
+              >Street, City<span ng-if="showField('address2')" class="ng-scope"
+                >,<br
+              /></span>
+            </span>
+
+            <span
+              ng-if="showField('address2')"
+              style="
+                font-size: 8pt;
+                line-height: 11pt;
+                font-family: Verdana, sans-serif;
+                color: #1e425a;
+              "
+              class="ng-binding ng-scope"
+              >Zip Code, Country</span
+            >
+          </span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3" style="padding-top: 15px">
+        <a
+          ng-if="showField('bannerURL')"
+          href="https://www.codetwo.com/email-signatures/"
+          target="_blank"
+          rel="noopener"
+          class="ng-scope"
+          ><img
+            border="0"
+            ng-src="https://www.mail-signatures.com/signature-generator/img/templates/professional-hr/banner.png"
+            alt="Banner"
+            width="400"
+            style="width: 400px; height: auto; border: 0"
+            src="https://ik.imagekit.io/techuptodate/SS-Thumbnail%20image-01.jpg?updatedAt=1718890326134"
+        /></a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table
+  style="
+    width: 400px;
+    font-size: 8pt;
+    font-family: Verdana, sans-serif;
+    background: transparent !important;
+  "
+  cellpadding="0"
+  cellspacing="0"
+  border="0"
+  class="ng-scope"
+>
+  <tbody>
+    <tr>
+      <td style="padding-top: 15px">
+        <span
+          ng-if="showField('website')"
+          style="
+            font-size: 8pt;
+            line-height: 12pt;
+            font-weight: bold;
+            padding: 0px;
+            margin: 0px;
+            color: #1e3078;
+            font-family: Verdana, sans-serif;
+          "
+          class="ng-scope"
+        >
+          <a
+            href="https://saeculumsolutions.com/"
+            target="_blank"
+            style="color: #1e3078; text-decoration: none; font-weight: bold"
+            ><span
+              style="
+                text-decoration: none;
+                font-size: 8pt;
+                line-height: 12pt;
+                color: #1e3078;
+                font-family: Verdana, sans-serif;
+                font-weight: bold;
+              "
+              class="ng-binding"
+              >www.saeculumsolutions.com</span
+            ></a
+          >
+        </span>
+      </td>
+      <td style="text-align: right; padding-top: 15px; white-space: nowrap">
+        <span ng-if="showField('facebookURL')" class="ng-scope"
+          ><a
+            href="https://www.facebook.com/MyCompany"
+            target="_blank"
+            rel="noopener"
+            ><img
+              border="0"
+              width="26"
+              ng-src="https://www.mail-signatures.com/signature-generator/img/templates/professional-hr/fb.png"
+              alt="facebook icon"
+              style="border: 0; height: 26px; width: 26px"
+              src="https://ik.imagekit.io/techuptodate/s-fb.svg?updatedAt=1718890986385" /></a
+          >&nbsp;</span
+        >
+
+        <span ng-if="showField('twitterURL')" class="ng-scope"
+          ><a
+            href="https://twitter.com/MyCompany404"
+            target="_blank"
+            rel="noopener"
+            ><img
+              border="0"
+              width="26"
+              ng-src="https://www.mail-signatures.com/signature-generator/img/templates/professional-hr/tt.png"
+              alt="twitter icon"
+              style="border: 0; height: 26px; width: 26px"
+              src="https://ik.imagekit.io/techuptodate/s-x.svg?updatedAt=1718890986379" /></a
+          >&nbsp;</span
+        >
+
+        <span ng-if="showField('youtubeURL')" class="ng-scope"
+          ><a
+            href="https://www.youtube.com/user/MyCompanyChannel"
+            target="_blank"
+            rel="noopener"
+            ><img
+              border="0"
+              width="26"
+              ng-src="https://www.mail-signatures.com/signature-generator/img/templates/professional-hr/yt.png"
+              alt="youtube icon"
+              style="border: 0; height: 26px; width: 26px"
+              src="https://ik.imagekit.io/techuptodate/s-you.svg?updatedAt=1718890986325" /></a
+          >&nbsp;</span
+        >
+
+        <span ng-if="showField('linkedinURL')" class="ng-scope"
+          ><a
+            href="https://www.linkedin.com/company/mycompany404"
+            target="_blank"
+            rel="noopener"
+            ><img
+              border="0"
+              width="26"
+              ng-src="https://www.mail-signatures.com/signature-generator/img/templates/professional-hr/ln.png"
+              alt="linkedin icon"
+              style="border: 0; height: 26px; width: 26px"
+              src="https://ik.imagekit.io/techuptodate/s-li.svg?updatedAt=1718890986296" /></a
+          >&nbsp;</span
+        >
+
+        <span ng-if="showField('instagramURL')" class="ng-scope"
+          ><a
+            href="https://www.instagram.com/mycompany404/"
+            target="_blank"
+            rel="noopener"
+            ><img
+              border="0"
+              width="26"
+              ng-src="https://www.mail-signatures.com/signature-generator/img/templates/professional-hr/it.png"
+              alt="instagram icon"
+              style="border: 0; height: 26px; width: 26px"
+              src="https://ik.imagekit.io/techuptodate/s-insta.svg?updatedAt=1718890986371" /></a
+          >&nbsp;</span
+        >
+      </td>
+    </tr>
+    <tr>
+      <td
+        colspan="2"
+        style="
+          text-align: justify;
+          font-size: 7pt;
+          color: #1e425a;
+          line-height: 10px;
+          padding-top: 15px;
+        "
+        class="ng-binding"
+      >
+        The content of this email is confidential and intended for the recipient
+        specified in message only. It is strictly forbidden to share any part of
+        this message with any third party, without a written consent of the
+        sender. If you received this message by mistake, please reply to this
+        message and follow with its deletion, so that we can ensure such a
+        mistake does not occur in the future.
+      </td>
+    </tr>
+  </tbody>
+</table>

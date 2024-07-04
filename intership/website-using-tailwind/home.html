@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/bd630bbc0c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Website</title>
+    <style>
+      .gradient {
+        background-image: linear-gradient(
+          to left,
+          #0d2433,
+          #12215c,
+          #273f70,
+          #426083,
+          #527874,
+          #728076,
+          #7f6e6c,
+          #6e3852,
+          #46133d,
+          #250935,
+          #0c0326
+        );
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- nav-start -->
+    <nav class="p-3 bg-slate-700 shadow md:flex md:items-center">
+      <div class="flex justify-between items-center">
+        <span class="text-2xl font-[Poppins] cursor-pointer">
+          <img class="h-10 inline" src="./images/images (1).png" />
+        </span>
+
+        <span class="text-3xl text-white cursor-pointer mx-2 md:hidden block">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+
+      <ul
+        class="md:flex md:items-center z-[100] md:z-auto md:static absolute bg-black text-white md:bg-transparent w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+      >
+        <li class="mx-4 my-6 md:my-0 text-center">
+          <a href="./home.html" class="text-xl">HOME</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0 text-center">
+          <a href="./me.html" class="text-xl">ME</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0 text-center">
+          <a href="./blog.html" class="text-xl">BLOG</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- nav-end -->
+
+    <!-- slider-start -->
+    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+      <!-- Carousel wrapper -->
+      <div class="relative h-44 overflow-hidden md:h-96">
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="https://www.bhmpics.com/downloads/svg-wallpapers-/10.2560px-mountains-1412683.svg.png"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="https://www.bhmpics.com/downloads/svg-wallpapers-/10.2560px-mountains-1412683.svg.png"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="https://www.bhmpics.com/downloads/svg-wallpapers-/10.2560px-mountains-1412683.svg.png"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="https://www.bhmpics.com/downloads/svg-wallpapers-/10.2560px-mountains-1412683.svg.png"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="https://www.bhmpics.com/downloads/svg-wallpapers-/10.2560px-mountains-1412683.svg.png"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+      </div>
+      <!-- Slider indicators -->
+      <div
+        class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+      >
+        <button
+          type="button"
+          class="w-3 h-3 rounded-full"
+          aria-current="true"
+          aria-label="Slide 1"
+          data-carousel-slide-to="0"
+        ></button>
+        <button
+          type="button"
+          class="w-3 h-3 rounded-full"
+          aria-current="false"
+          aria-label="Slide 2"
+          data-carousel-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          class="w-3 h-3 rounded-full"
+          aria-current="false"
+          aria-label="Slide 3"
+          data-carousel-slide-to="2"
+        ></button>
+        <button
+          type="button"
+          class="w-3 h-3 rounded-full"
+          aria-current="false"
+          aria-label="Slide 4"
+          data-carousel-slide-to="3"
+        ></button>
+        <button
+          type="button"
+          class="w-3 h-3 rounded-full"
+          aria-current="false"
+          aria-label="Slide 5"
+          data-carousel-slide-to="4"
+        ></button>
+      </div>
+      <!-- Slider controls -->
+      <button
+        type="button"
+        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-prev
+      >
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+        >
+          <svg
+            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 1 1 5l4 4"
+            />
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button
+        type="button"
+        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-next
+      >
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+        >
+          <svg
+            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 9 4-4-4-4"
+            />
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button>
+    </div>
+    <!-- slider-end -->
+
+    <!-- cards-start -->
+    <section>
+      <div
+        class="grid grid-cols-1 lg:grid-cols-3 gap-5 justify-center m-3 md:my-5 md:mx-24 lg:mx-16"
+      >
+      <div class=" bg-slate-100">
+        <div class="gradient h-40 md:h-64 lg:h-44 xl:h-64 2xl:h-80"></div>
+        <div class="w-fit mx-auto -mt-[55px] md:-mt-[90px] xl:-mt-[105px] 2xl:-mt-[126px]">
+          <img
+            src="./images/5.jpg"
+            alt="image"
+            class="w-28 md:w-52 lg:w-44 xl:w-52 2xl:w-64 rounded-full"
+          />
+        </div>
+        <div class="text-center p-6">
+          <p class="text-xl md:text-3xl 2xl:text-4xl font-bold">Deep Patel</p>
+          <p class="text-sm md:text-lg xl:text-xl 2xl:text-2xl">
+            Lead Director
+          </p>
+          <p class="text-sm md:text-lg xl:text-lg 2xl:text-xl">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque,
+            quam est amet eos sit hic saepe natus, unde quos necessitatibus
+            repellat nemo pariatur reiciendis. Fugit, veniam modi. Sapiente,
+            esse voluptas.
+          </p>
+        </div>
+        <div
+          class="h-20 bg-black text-white flex justify-evenly items-center"
+        >
+          <div>
+            <p class="indent-3">
+              400 <br />
+              Photos
+            </p>
+          </div>
+          <div>
+            <p>
+              2000 <br />
+              Likes
+            </p>
+          </div>
+          <div>
+            <p class="indent-5">
+              500 <br />
+              Following
+            </p>
+          </div>
+        </div>
+      </div>
+        <div class=" bg-slate-100">
+          <div class="gradient h-40 md:h-64 lg:h-44 xl:h-64 2xl:h-80"></div>
+          <div class="w-fit mx-auto -mt-[55px] md:-mt-[90px] xl:-mt-[105px] 2xl:-mt-[126px]">
+            <img
+              src="./images/5.jpg"
+              alt="image"
+              class="w-28 md:w-52 lg:w-44 xl:w-52 2xl:w-64 rounded-full"
+            />
+          </div>
+          <div class="text-center p-6">
+            <p class="text-xl md:text-3xl 2xl:text-4xl font-bold">Deep Patel</p>
+            <p class="text-sm md:text-lg xl:text-xl 2xl:text-2xl">
+              Lead Director
+            </p>
+            <p class="text-sm md:text-lg xl:text-lg 2xl:text-xl">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque,
+              quam est amet eos sit hic saepe natus, unde quos necessitatibus
+              repellat nemo pariatur reiciendis. Fugit, veniam modi. Sapiente,
+              esse voluptas.
+            </p>
+          </div>
+          <div
+            class="h-20 bg-black text-white flex justify-evenly items-center"
+          >
+            <div>
+              <p class="indent-3">
+                400 <br />
+                Photos
+              </p>
+            </div>
+            <div>
+              <p>
+                2000 <br />
+                Likes
+              </p>
+            </div>
+            <div>
+              <p class="indent-5">
+                500 <br />
+                Following
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class=" bg-slate-100">
+          <div class="gradient h-40 md:h-64 lg:h-44 xl:h-64 2xl:h-80"></div>
+          <div class="w-fit mx-auto -mt-[55px] md:-mt-[90px] xl:-mt-[105px] 2xl:-mt-[126px]">
+            <img
+              src="./images/5.jpg"
+              alt="image"
+              class="w-28 md:w-52 lg:w-44 xl:w-52 2xl:w-64 rounded-full"
+            />
+          </div>
+          <div class="text-center p-6">
+            <p class="text-xl md:text-3xl 2xl:text-4xl font-bold">Deep Patel</p>
+            <p class="text-sm md:text-lg xl:text-xl 2xl:text-2xl">
+              Lead Director
+            </p>
+            <p class="text-sm md:text-lg xl:text-lg 2xl:text-xl">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque,
+              quam est amet eos sit hic saepe natus, unde quos necessitatibus
+              repellat nemo pariatur reiciendis. Fugit, veniam modi. Sapiente,
+              esse voluptas.
+            </p>
+          </div>
+          <div
+            class="h-20 bg-black text-white flex justify-evenly items-center"
+          >
+            <div>
+              <p class="indent-3">
+                400 <br />
+                Photos
+              </p>
+            </div>
+            <div>
+              <p>
+                2000 <br />
+                Likes
+              </p>
+            </div>
+            <div>
+              <p class="indent-5">
+                500 <br />
+                Following
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- cards-end -->
+
+    <section>
+      <div
+        class="flex justify-center gap-5 lg:gap-16 p-5 lg:p-10 flex-wrap lg:flex-nowrap"
+      >
+        <img
+          src="./images/free-images.jpg"
+          alt="image"
+          class="w-6/7 md:w-3/4 lg:w-1/2 xl:w-1/3 2xl:w-1/4 object-contain"
+        />
+        <div class="w-full lg:w-1/2">
+          <div
+            class="font-bold text-md md:text-lg xl:text-3xl 2xl:text-5xl ps-3"
+          >
+            First featurette heading. Tt'll blow your mind.
+          </div>
+          <p
+            class="text-justify p-3 text-sm md:text-md xl:text-xl 2xl:text-2xl"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+            quibusdam eaque tempore, at inventore aspernatur consequuntur sit,
+            blanditiis suscipit ex deserunt modi nesciunt quod consequatur
+            impedit quisquam nobis, quam expedita architecto tempora facere?
+            Ipsum ducimus tempore reprehenderit repellendus harum aut quia
+            suscipit adipisci ex iure optio voluptates veritatis porro officia
+            vitae quae rerum, possimus aperiam sint maxime! Non ut commodi
+            molestias officia reprehenderit ipsum ipsam beatae dolorum.
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex justify-center gap-5 lg:gap-16 p-5 lg:p-10 flex-wrap lg:flex-nowrap"
+      >
+        <div class="w-full lg:w-1/2 order-2 md:order-2 lg:order-1">
+          <div
+            class="font-bold text-md md:text-lg xl:text-3xl 2xl:text-5xl ps-3"
+          >
+            First featurette heading. Tt'll blow your mind.
+          </div>
+          <p
+            class="text-justify p-3 text-sm md:text-md xl:text-xl 2xl:text-2xl"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+            quibusdam eaque tempore, at inventore aspernatur consequuntur sit,
+            blanditiis suscipit ex deserunt modi nesciunt quod consequatur
+            impedit quisquam nobis, quam expedita architecto tempora facere?
+            Ipsum ducimus tempore reprehenderit repellendus harum aut quia
+            suscipit adipisci ex iure optio voluptates veritatis porro officia
+            vitae quae rerum, possimus aperiam sint maxime! Non ut commodi
+            molestias officia reprehenderit ipsum ipsam beatae dolorum.
+          </p>
+        </div>
+        <img
+          src="./images/free-images.jpg"
+          alt="image"
+          class="order-1 md:order-1 lg:order-2 w-6/7 md:w-3/4 lg:w-1/2 xl:w-1/3 2xl:w-1/4 object-contain"
+        />
+      </div>
+      <div
+        class="flex justify-center gap-5 lg:gap-16 p-5 lg:p-10 flex-wrap lg:flex-nowrap"
+      >
+        <img
+          src="./images/free-images.jpg"
+          alt="image"
+          class="w-6/7 md:w-3/4 lg:w-1/2 xl:w-1/3 2xl:w-1/4 object-contain"
+        />
+        <div class="w-full lg:w-1/2">
+          <div
+            class="font-bold text-md md:text-lg xl:text-3xl 2xl:text-5xl ps-3"
+          >
+            First featurette heading. Tt'll blow your mind.
+          </div>
+          <p
+            class="text-justify p-3 text-sm md:text-md xl:text-xl 2xl:text-2xl"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+            quibusdam eaque tempore, at inventore aspernatur consequuntur sit,
+            blanditiis suscipit ex deserunt modi nesciunt quod consequatur
+            impedit quisquam nobis, quam expedita architecto tempora facere?
+            Ipsum ducimus tempore reprehenderit repellendus harum aut quia
+            suscipit adipisci ex iure optio voluptates veritatis porro officia
+            vitae quae rerum, possimus aperiam sint maxime! Non ut commodi
+            molestias officia reprehenderit ipsum ipsam beatae dolorum.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div
+        class="bg-slate-700 flex flex-colum flex-wrap justify-center text-white p-5"
+      >
+        <div
+          class="lg:text-start lg:flex lg:justify-evenly p-5 order-2 lg:order-1"
+        >
+          <ul class="text-center">
+            <li class="p-2 pt-4 text-lg">
+              <p>
+                Appland is completely creative, lightweight, <br />
+                clean app landing page.
+              </p>
+            </li>
+            <li class="p-2 text-lg"><p>Made with by Designing World</p></li>
+            <a
+              href="https://www.facebook.com/login/"
+              target="_blank"
+              class="rounded-full shadow-lg pb-2 pt-3 px-3 m-1 bg-white"
+              ><i
+                class="fa-brands fa-facebook-f text-2xl"
+                style="color: blue"
+              ></i
+            ></a>
+            <a
+              href="https://x.com/?lang=en"
+              target="_blank"
+              class="rounded-full shadow-lg pb-2 pt-3 px-2 m-1 bg-white"
+              ><i class="fa-brands fa-twitter text-2xl" style="color: blue"></i
+            ></a>
+            <a
+              href="https://www.google.com/"
+              target="_blank"
+              class="rounded-full shadow-lg pb-2 pt-3 px-2 m-1 bg-white"
+              ><i class="fa-brands fa-google text-2xl" style="color: blue"></i
+            ></a>
+            <a
+              href="https://www.skype.com/en/features/skype-web/"
+              target="_blank"
+              class="rounded-full shadow-lg pb-2 pt-3 px-2 m-1 bg-white"
+              ><i class="fa-brands fa-skype text-2xl" style="color: blue"></i
+            ></a>
+          </ul>
+        </div>
+        <div
+          class="md:flex md:justify-evenly text-center md:text-start mt-6 lg:mt-0 grow order-1 lg:order-2"
+        >
+          <ul class="px-5 xl:px-10 cursor-pointer">
+            <span class="p-2 text-2xl font-bold">About</span>
+            <li class="p-2 pt-4 text-lg">About Us</li>
+            <li class="p-2 text-lg">Corporate</li>
+            <li class="p-2 text-lg">Terms & Policy</li>
+            <li class="p-2 text-lg">Community</li>
+          </ul>
+          <ul class="mt-3 md:mt-0 px-5 xl:px-10 cursor-pointer">
+            <span class="p-2 text-2xl font-bold">Support</span>
+            <li class="p-2 pt-4 text-lg">Help</li>
+            <li class="p-2 text-lg">Support</li>
+            <li class="p-2 text-lg">Privacy Policy</li>
+            <li class="p-2 text-lg">Teams & Condition</li>
+            <li class="p-2 text-lg">Help & Support</li>
+          </ul>
+          <ul class="mt-3 md:mt-0 px-5 xl:px-10 cursor-pointer">
+            <span class="p-2 text-2xl font-bold">Contact</span>
+            <li class="p-2 pt-4 text-lg">Call Center</li>
+            <li class="p-2 text-lg">Email Us</li>
+            <li class="p-2 text-lg">Terms & Condition</li>
+            <li class="p-2 text-lg">Help Center</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+        e.name === "menu"
+          ? ((e.name = "close"),
+            list.classList.add("top-[80px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("opacity-100"));
+      }
+    </script>
+  </body>
+</html>

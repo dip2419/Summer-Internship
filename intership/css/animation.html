@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .ball {
+        animation-name: ball-animation;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        animation-iteration-count: 2;
+        animation-direction: alternate;
+        animation-fill-mode: backwards;
+        position: relative;
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        
+      }
+
+      @keyframes ball-animation {
+        0% {
+          left: 0px;
+          top: 0px;
+          background-color: rgb(0, 0, 0);
+        }
+        /* 25% {
+          left: 500px;
+          top: 0px;
+          background-color: blue;
+        }
+        50% {
+          left: 500px;
+          top: 500px;
+          background-color: black;
+        }
+        75% {
+          left: 0px;
+          top: 500px;
+          background-color: bisque;
+        } */
+        100% {
+          left: 1100px;
+          top: 0px;
+          background-color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-ball">
+      <div class="ball"></div>
+    </div>
+  </body>
+</html>

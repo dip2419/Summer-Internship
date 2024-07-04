@@ -1,0 +1,23 @@
+
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+
+    /* flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: column; */
+
+}
+.box{
+    width: 20%;
+    border: 1px solid black;
+    height: 100px;
+    margin: 10px;
+    /*  align-self: stretch; */
+
+}
+

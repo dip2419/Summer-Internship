@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <div
+      class="relative flex bg-clip-border bg-white text-gray-700 shadow-md w-[300px] md:w-[500px] xl:w-[500px] h-[150px] md:h-[250px] xl:h-[300px] flex-row m-3 md:m-10"
+    >
+      <div
+        class="relative p-4 group transition-all w-[150px] md:w-[250px] xl:w-[250px] bg-green-600 shrink-0 border-green-400"
+      >
+        <div
+          class="bg-rose-400 scale-0 w-full h-full transition-all transition duration-700 group-hover:scale-100"
+        ></div>
+        <div
+          class="bg-green-800 group-hover:bg-white group-hover:text-black absolute top-4 left-4 text-white w-14 rounded-full py-1 text-center m-3"
+        >
+          14 <br />SEP
+        </div>
+      </div>
+      <div class="p-2 md:p-4 overflow-auto">
+        <h6
+          class="mb-1 md:mb-2 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal text-gray-700 uppercase hover:text-green-600"
+        >
+          startups
+        </h6>
+        <h4
+          title="Lyft launching cross-platform service this week"
+          class="line-clamp-2 mb-2 font-sans text-sm md:text-lg antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 hover:text-green-600"
+        >
+          Lyft launching cross-platform service this week
+        </h4>
+        <p
+          class="font-sans text-sm md:text-sm antialiased font-normal leading-relaxed text-gray-700 text-justify "
+        >
+          Like so many organizations these days, Autodesk is a company in
+          transition.
+        </p>
+        <hr />
+        <a href="#" class="inline-block"
+          ><button
+            class="flex items-center gap-2 px-2 md:py-2 mt-2 font-sans text-xs font-bold text-center text-gray-900 uppercase align-middle transition-all rounded-lg select-none disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none hover:bg-gray-900/10 active:bg-gray-900/20 hover:underline hover:text-blue-500"
+            type="button"
+          >
+            Learn More<svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+              class="w-4 h-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              ></path>
+            </svg></button
+        ></a>
+      </div>
+    </div>
+  </body>
+</html>

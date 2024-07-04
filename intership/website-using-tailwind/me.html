@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/bd630bbc0c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+    <title>Videos</title>
+    <style>
+      .gradient {
+        background-image: linear-gradient(
+          to left,
+          #0d2433,
+          #12215c,
+          #273f70,
+          #426083,
+          #527874,
+          #728076,
+          #7f6e6c,
+          #6e3852,
+          #46133d,
+          #250935,
+          #0c0326
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="p-3 bg-slate-700 shadow md:flex md:items-center">
+      <div class="flex justify-between items-center">
+        <span class="text-2xl font-[Poppins] cursor-pointer">
+          <img class="h-10 inline" src="./images/images (1).png" />
+        </span>
+
+        <span class="text-3xl text-white cursor-pointer mx-2 md:hidden block">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+
+      <ul
+        class="md:flex md:items-center z-[1] md:z-auto md:static absolute  bg-black text-white md:bg-transparent  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+      >
+        <li class="mx-4 my-6 md:my-0 text-center">
+          <a href="./home.html" class="text-xl">HOME</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0 text-center">
+          <a href="./me.html" class="text-xl">ME</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0 text-center">
+          <a href="./blog.html" class="text-xl">BLOG</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="p-4">
+      <!-- header -->
+      <header>
+        <!-- thumbnail Part -->
+        <div class="flex gradient text-white p-5 gap-4">
+          <div class="w-[75px] md:w-[150px] h-[75px] md:h-[150px] flex-shrink-0 bg-cyan-500 rounded-md border-4">
+            <img class="w-full h-full" src="./images/images.png" alt="img" />
+          </div>
+          <!-- content Part -->
+          <div>
+            <div class="text-base md:text-2xl font-bold">Deep Patel</div>
+            <div class="py-1 text-sm md:text-base ">Front-end Devloper</div>
+            <button type="button" class="bg-cyan-500 text-sm md:text-base py-1 px-2 rounded-sm md:rounded-md my-2">Edit Profile</button>
+          </div>
+        </div>
+      </header>
+
+      <!-- nav -->
+      <nav>
+        <div class="md:ps-44 bg-slate-200 flex overflow-y-auto p-3">
+          <div><a href="#" class="px-4 font-bold hover:border-b-2 border-black flex">Home</a></div>
+          <div><a href="#" class="px-4 font-bold hover:border-b-2 border-black flex">About</a></div>
+          <div><a href="#" class="px-4 font-bold hover:border-b-2 border-black flex">Services</a></div>
+          <div><a href="#" class="px-4 font-bold hover:border-b-2 border-black flex">ContactUs</a></div>
+        </div>
+      </nav>
+
+      <!-- main -->
+      <main>
+        <div class="flex flex-col lg:flex-row gap-5 pt-5">
+          <div class="w-full lg:w-3/4">
+              <div>
+                <strong>Videos(12)</strong>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-5 gap-1 md:gap-2 pt-3">
+                <div class="md:col-span-2 md:row-start-1 md:row-end-3 md:col-start-1 md:col-end-3 md:h-96">
+                  <iframe class="w-full md:h-full" src="https://www.youtube.com/embed/p0Q8SQSCoZg?si=Rncsah-qRiLVidBM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>              
+                </div>
+                <div class="bg-black w-full"></div>
+                <div class="bg-black w-full"></div>
+                <div class="bg-black w-full"></div>
+                <div class="bg-black w-full"></div>
+                <div class="bg-black w-full"></div>
+                <div class="bg-black w-full"></div>
+                <div class="bg-black w-full"></div>
+                <div class="bg-black w-full"></div>
+                <div class="bg-black w-full"></div>
+                <div class="bg-black w-full"></div>
+                <div class="bg-black w-full"></div>
+              </div>
+          </div>
+          <div class="w-full lg:w-1/4">
+            <div class="mb-2.5">Personal Information</div>
+            <div>
+              <ul class="flex flex-col gap-5 mb-5">
+                <li>
+                  <strong>Occupation:</strong><br />
+                  <p>Front-end Devloper</p>
+                </li>
+                <li>
+                  <strong>Skills:</strong><br />
+                  <p>
+                    C/C++, HTML5, CSS3, Bootstrap, Tailwind, Javascript, PHP,
+                    MYsql, React.JS.
+                  </p>
+                </li>
+                <li>
+                  <strong>Birth Of Date:</strong><br />
+                  <p>20/07/2003</p>
+                </li>
+                <li>
+                  <strong>Country:</strong><br />
+                  <p>India</p>
+                </li>
+                <li>
+                  <strong>Address</strong><br />
+                  <p>
+                    A/8 Danev Park Society Gate No.1, Opposite AMC water Tank,
+                    Near Jivan Wadi, Nikol Gam Road, AHmedabad-382350
+                  </p>
+                </li>
+                <li>
+                  <strong>Phone No:</strong><br />
+                  <p>(+91) 12345 54123</p>
+                </li>
+              </ul>
+              <div>
+                <strong class="py-3 pe-5">Friend List</strong>
+                <div class="flex flex-wrap pt-2">
+                  <img src="./images/3.jpg" alt="" class="w-10 m-1" />
+                  <img src="./images/5.jpg" alt="" class="w-10 m-1" />
+                  <img src="./images/4.avif" alt="" class="w-10 m-1" />
+                  <img src="./images/6.avif" alt="" class="w-10 m-1" />
+                  <img src="./images/7.avif" alt="" class="w-10 m-1" />
+                  <img src="./images/8.avif" alt="" class="w-10 m-1" />
+                  <img src="./images/3.jpg" alt="" class="w-10 m-1" />
+                  <img src="./images/5.jpg" alt="" class="w-10 m-1" />
+                  <img src="./images/4.avif" alt="" class="w-10 m-1" />
+                  <img src="./images/6.avif" alt="" class="w-10 m-1" />
+                  <img src="./images/7.avif" alt="" class="w-10 m-1" />
+                  <img src="./images/8.avif" alt="" class="w-10 m-1" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <footer>
+      <div class="bg-emerald-700">
+        <div
+          class="md:flex md:justify-evenly md:m-2 p-5 text-white text-center"
+        >
+          <ul class="my-4 md:my-0 cursor-pointer">
+            <span class="text-2xl font-bold ">| Quicks</span>
+            <li class="flex justify-center md:justify-start pe-7 py-2 md:px-0 hover:ps-2 ">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />Home
+            </li>
+            <li class="flex justify-center md:justify-start pe-7 py-2 md:px-0 hover:ps-2 ">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />About
+            </li>
+            <li class="flex justify-center md:justify-start pe-10 py-2 md:px-0 hover:ps-2">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />FAQ
+            </li>
+            <li class="flex justify-center md:justify-start ps-3 py-2 md:px-0 hover:ps-2">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />Get
+              Started
+            </li>
+            <li class="flex justify-center md:justify-start pe-4 py-2 md:px-0 hover:ps-2 ">
+              <img
+                src="./images/arrow.svg"
+                alt="arrow"
+                class="w-3 me-1"
+              />Videos
+            </li>
+          </ul>
+          <ul class="my-4 md:my-0 cursor-pointer">
+            <span class="text-2xl font-bold cursor-pointer">| Quicks</span>
+            <li class="flex justify-center md:justify-start pe-7 py-2 md:px-0 hover:ps-2">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />Home
+            </li>
+            <li class="flex justify-center md:justify-start pe-7 py-2 md:px-0 hover:ps-2">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />About
+            </li>
+            <li class="flex justify-center md:justify-start pe-10 py-2 md:px-0 hover:ps-2">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />FAQ
+            </li>
+            <li class="flex justify-center md:justify-start ps-3 py-2 md:px-0 hover:ps-2">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />Get
+              Started
+            </li>
+            <li class="flex justify-center md:justify-start pe-4 py-2 md:px-0 hover:ps-2">
+              <img
+                src="./images/arrow.svg"
+                alt="arrow"
+                class="w-3 me-1"
+              />Videos
+            </li>
+          </ul>
+          <ul class="my-4 md:my-0 cursor-pointer">
+            <span class="text-2xl font-bold">| Quicks</span>
+            <li class="flex justify-center md:justify-start pe-7 py-2 md:px-0 hover:ps-2">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />Home
+            </li>
+            <li class="flex justify-center md:justify-start pe-7 py-2 md:px-0 hover:ps-2">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />About
+            </li>
+            <li class="flex justify-center md:justify-start pe-10 py-2 md:px-0 hover:ps-2">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />FAQ
+            </li>
+            <li class="flex justify-center md:justify-start ps-3 py-2 md:px-0 hover:ps-2">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />Get
+              Started
+            </li>
+            <li class="flex justify-center md:justify-start pe-4 py-2 md:px-0 hover:ps-2">
+              <img
+                src="./images/arrow.svg"
+                alt="arrow"
+                class="w-3 me-1"
+              />Videos
+            </li>
+          </ul>
+        </div>
+        <div class="text-center">
+          <a href="#"
+            ><i
+              class="fa-brands fa-facebook-f text-2xl m-2"
+              style="color: #ffffff"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-twitter text-2xl m-2"
+              style="color: #ffffff"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-google-plus-g text-2xl m-2"
+              style="color: #ffffff"
+              ;
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-instagram text-2xl m-2"
+              style="color: #ffffff"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-regular fa-envelope text-2xl m-2"
+              style="color: #ffffff"
+            ></i
+          ></a>
+        </div>
+        <div class="text-center underline decoration-2 text-white pb-4 cursor-pointer">
+          <p class="text-xl">example@gmail.com</p>
+        </div>
+        <div class="text-center text-white pb-5 cursor-pointer">
+          <p class="text-lg">&copy; All Right Reversed. Sunlimetech</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+        e.name === "menu"
+          ? ((e.name = "close"),
+            list.classList.add("top-[80px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("opacity-100"));
+      }
+    </script>
+  </body>
+</html>

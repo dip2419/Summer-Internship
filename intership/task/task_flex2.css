@@ -1,0 +1,88 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.main {
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+}
+.head {
+  width: 30%;
+}
+.head h1 {
+  padding: 15px 10px;
+  font-size: 25px;
+  color: gray;
+}
+.items {
+  width: 70%;
+  display: flex;
+  padding: 10px;
+  justify-content: end;
+}
+.items input {
+ padding-right: 40px;
+ padding-left: 10px;
+  border-radius: 3px;
+  border: none;
+}
+.items ul {
+  display: flex;
+  }
+  .items ul li {
+    list-style: none;
+    padding: 10px 20px;
+    }
+.container{
+    display: flex;
+}
+aside{
+    width: 20%;
+    height: 91.7vh;
+}
+.sidebar ul li{
+    margin-top: 10px;
+    width: 100%;
+    color: rgb(3, 180, 249);
+    padding: 5px 0px 5px 20px;
+}
+.section1{
+    width: 70%;
+}
+.heading p{
+  font-size: 30px;
+  padding: 20px;
+}
+
+.circle{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 55px;
+}
+.circle-image{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-color: gray;
+  margin: 10px 70px;
+}
+
+table,td{
+  border-top: 1px solid black ;
+  padding: 10px 180px 10px 10px;
+  border-collapse: collapse;
+  border-spacing: -1px;
+}
+table,th{
+  padding: 10px 180px 10px 10px;
+  border: none;
+}
+
+
+ 
+

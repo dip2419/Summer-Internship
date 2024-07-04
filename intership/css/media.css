@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: rgb(106, 100, 100);
+}
+.card{
+    background-color: white;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email{
+    width: 70%;
+    padding: 20px;
+}
+.email h3{
+    padding-bottom: 10px;
+}
+.email ul li {
+    list-style-type: none;
+    padding-top:5px ;
+}
+.email ul li a{
+    text-decoration: none;
+    color: black;
+}
+.detail p{
+    padding: 10px;
+    text-align: justify;
+}
+@media all and ( min-width:1001px){
+    .email ul li a:after{
+        content: "("attr(data-email)")";
+    }
+}
+@media all and (max-width:1000px) and (min-width:801px){
+    .email ul li a:before{
+        content: " Email: ";
+        font-style: italic;
+        color: gray;
+    }
+}
+@media all and (max-width:800px) and (min-width:600px) , (min-width:1001){
+    .email ul i a { 
+        content: url(mail.png);
+        /* background: url(mail.png); */
+    }
+}

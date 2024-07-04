@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/bd630bbc0c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+    <title>Blog Page</title>
+  </head>
+  <body>
+    <nav class="p-3 bg-slate-700 shadow md:flex md:items-center">
+      <div class="flex justify-between items-center">
+        <span class="text-2xl font-[Poppins] cursor-pointer">
+          <img class="h-10 inline" src="./images/images (1).png" />
+        </span>
+
+        <span class="text-3xl text-white cursor-pointer mx-2 md:hidden block">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+
+      <ul
+        class="md:flex md:items-center z-[1] md:z-auto md:static absolute  bg-black text-white md:bg-transparent  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+      >
+        <li class="mx-4 my-6 md:my-0 text-center">
+          <a href="./home.html" class="text-xl">HOME</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0 text-center">
+          <a href="./me.html" class="text-xl">ME</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0 text-center">
+          <a href="./blog.html" class="text-xl">BLOG</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="grid grid-cols-3 gap-5 m-5">
+        <div class="col-span-3 lg:col-span-2">
+          <div class="p-5 border-2 border-black">
+            <div class="font-bold text-2xl py-2">
+              All Photograps are accurates
+            </div>
+            <p class="text-justify text-xs md:text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+              reiciendis fuga. Aperiam delectus sequi non esse inventore
+              sapiente facere, minus ducimus quia aliquam voluptatem, quidem
+              earum temporibus unde perferendis repellat! Quas facere quo quis,
+              vitae in quia dolorum ab officiis soluta omnis laudantium autem
+              vel impedit velit, totam pariatur. Repellat.Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Atque, reiciendis fuga. Aperiam
+              delectus sequi non esse inventore sapiente facere, minus ducimus
+              quia aliquam voluptatem, quidem earum temporibus unde perferendis
+              repellat! Quas facere quo quis, vitae in quia dolorum ab officiis
+              soluta omnis laudantium autem vel impedit velit, totam pariatur.
+              Repellat.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Atque, reiciendis fuga. Aperiam delectus sequi non esse inventore
+              sapiente facere, minus ducimus quia aliquam voluptatem, quidem
+              earum temporibus unde perferendis repellat! Quas facere quo quis,
+              vitae in quia dolorum ab officiis soluta omnis laudantium autem
+              vel impedit velit, totam pariatur. Repellat.
+            </p>
+          </div>
+          <div class="p-5 border-2 border-black my-5">
+            <div class="font-bold text-2xl py-2">Commints 3</div>
+            <div class="border-2">
+              <div class="md:flex gap-5 p-5">
+                <div class="ms-2 md:ms-0">
+                  <img src="./images/4.avif" class="w-44 lg:w-60" alt="image" />
+                </div>
+                <div>
+                  <div class="text-center md:text-start"><strong class="text-xl md:text-2xl font-bold">Deep Patel</strong></div>
+                  <p class="text-justify text-xs md:text-lg">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Neque dolorem omnis ab ipsam sit, at, vero facilis quod
+                    quaerat obcaecati praesentium veritatis porro suscipit
+                  </p>
+                  <div class="text-blue-700 font-bold text-md lg:text-md 2xl:text-xl">Mar 09 2018 Reply</div>
+                </div>
+              </div>
+              <div class="md:flex gap-5 p-5">
+                <div class="ms-2 md:ms-0">
+                  <img src="./images/4.avif" class="w-44 lg:w-60" alt="image" />
+                </div>
+                <div>
+                  <div class="text-center md:text-start"><strong class="text-xl md:text-2xl font-bold">Deep Patel</strong></div>
+                  <p class="text-justify text-xs md:text-lg">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Neque dolorem omnis ab ipsam sit, at, vero facilis quod
+                    quaerat obcaecati praesentium veritatis porro suscipit
+                  </p>
+                  <div class="text-blue-700 font-bold text-md lg:text-md 2xl:text-xl">Mar 09 2018 Reply</div>
+                </div>
+              </div>
+              <div class="md:flex gap-5 p-5">
+                <div class="ms-2 md:ms-0">
+                  <img src="./images/4.avif" class="w-44 lg:w-60" alt="image" />
+                </div>
+                <div>
+                  <div class="text-center md:text-start"><strong class="text-xl md:text-2xl font-bold">Deep Patel</strong></div>
+                  <p class="text-justify text-xs md:text-lg">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Neque dolorem omnis ab ipsam sit, at, vero facilis quod
+                    quaerat obcaecati praesentium veritatis porro suscipit
+                  </p>
+                  <div class="text-blue-700 font-bold text-md lg:text-md 2xl:text-xl">Mar 09 2018 Reply</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-5 border-2 border-black">
+            <div class="text-md md:text-xl">
+              <strong class="text-xl md:text-2xl font-bold">Leave a reply</strong> Your email address
+              will not be published. <br />
+              Required fields are marked*
+            </div>
+            <form class="md:py-5">
+              <div class="relative text-center pt-5">
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  class="md:mx-3 my-2 md:my-0 py-3 px-4 border-2 w-full md:w-[31.5%] 2xl:w-[32.5%] border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
+                  required
+                  aria-describedby="email-error"
+                  placeholder="Username"
+                />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="md:mx-3 mt-2 md:mt-0 md:my-0 py-3 px-4 border-2 w-full md:w-[31.5%] 2xl:w-[32.5%] border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
+                  required
+                  aria-describedby="email-error"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="text-center">
+                <textarea
+                  name="textarea"
+                  class="w-full md:w-2/3 h-44 border-2 my-5 p-2 rounded-md"
+                  id="textarea"
+                  placeholder="Please type what you want...."
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button
+                  type="submit"
+                  class="py-3 px-4 inline-flex justify-center items-center w-full md:w-2/3 rounded-md border border-transparent font-bold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800"
+                >
+                  Sumit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-span-3 lg:col-span-1">
+          <div class="border-2 p-5 border-black">
+            <div class="relative">
+              <div
+                class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+              >
+                <svg
+                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </div>
+              <input
+                type="search"
+                id="default-search"
+                class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Search Mockups, Logos..."
+                required
+              />
+            </div>
+          </div>
+          <div class="border-2 border-black mt-5">
+            <div class="p-4">
+              <strong class="text-xl md:text-2xl font-bold">Categories Clouds</strong>
+              <div class="py-4">
+                <div
+                  class="text-lg md:text-xl border-2 border-sky-400 rounded-lg text-emerald-600 p-2 m-1 inline-block"
+                >
+                  E-commerce
+                </div>
+                <div
+                  class="text-lg md:text-xl border-2 border-sky-400 rounded-lg text-emerald-600 p-2 m-1 inline-block"
+                >
+                  Microsoft Technologies
+                </div>
+                <br />
+                <div
+                  class="text-lg md:text-xl border-2 border-sky-400 rounded-lg text-emerald-600 p-2 m-1 inline-block"
+                >
+                  Creative UX
+                </div>
+                <div
+                  class="text-lg md:text-xl border-2 border-sky-400 rounded-lg text-emerald-600 p-2 m-1 inline-block"
+                >
+                  Wordpress
+                </div>
+                <div
+                  class="text-lg md:text-xl border-2 border-sky-400 rounded-lg text-emerald-600 p-2 m-1 inline-block"
+                >
+                  Enterprise Mobility
+                </div>
+                <br />
+                <div
+                  class="text-lg md:text-xl border-2 border-sky-400 rounded-lg text-emerald-600 p-2 m-1 inline-block"
+                >
+                  React JS
+                </div>
+                <div
+                  class="text-lg md:text-xl border-2 border-sky-400 rounded-lg text-emerald-600 p-2 m-1 inline-block"
+                >
+                  Angular JS
+                </div>
+                <div
+                  class="text-lg md:text-xl border-2 border-sky-400 rounded-lg text-emerald-600 p-2 m-1 inline-block"
+                >
+                  Express JS
+                </div>
+                <br />
+                <div
+                  class="text-lg md:text-xl border-2 border-sky-400 rounded-lg text-emerald-600 p-2 m-1 inline-block"
+                >
+                  HTML5
+                </div>
+                <div
+                  class="text-lg md:text-xl border-2 border-sky-400 rounded-lg text-emerald-600 p-2 m-1 inline-block"
+                >
+                  CSS3
+                </div>
+                <div
+                  class="text-lg md:text-xl border-2 border-sky-400 rounded-lg text-emerald-600 p-2 m-1 inline-block"
+                >
+                  Website Design
+                </div>
+                <br />
+                <div
+                  class="text-lg md:text-xl border-2 border-sky-400 rounded-lg text-emerald-600 p-2 m-1 inline-block"
+                >
+                  Bootstrap
+                </div>
+                <div
+                  class="text-lg md:text-xl border-2 border-sky-400 rounded-lg text-emerald-600 p-2 m-1 inline-block"
+                >
+                  Tailwind
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-2 border-black mt-5">
+            <div class="p-4 text-justify">
+              <strong class="text-xl md:text-2xl font-bold">Popular Posts</strong>
+              <div class="py-3">
+                <p class="p-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                  ab animi nemo distinctio esse, modi eligendi expedita
+                  exercitationem, ut adipisci repudiandae voluptatibus sequi
+                  perferendis blanditiis beatae laborum nesciunt quis placeat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="border-2 border-black mt-5">
+            <div class="p-4 text-justify xl:pb-10">
+              <strong class="text-xl md:text-2xl font-bold">Instgram Posts</strong>
+              <div class="py-3">
+                <p class="p-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                  ab animi nemo distinctio esse, modi eligendi expedita
+                  exercitationem, ut adipisci repudiandae voluptatibus sequi
+                  perferendis blanditiis beatae laborum nesciunt quis placeat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="border-2 border-black mt-5">
+            <div class="p-4 text-justify xl:pb-20">
+              <div class="text-md md:text-xl">
+                <strong class="text-md md:text-2xl">Email Newsletters</strong> Get our
+                products/news earlier than others, let's get in touch.
+              </div>
+              <div class="pb-3 pt-7">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="py-3 px-4 border-2 w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
+                  required
+                  aria-describedby="email-error"
+                  placeholder="Enter your Email"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="bg-emerald-700">
+        <div
+          class="md:flex md:justify-evenly md:m-2 p-5 text-white text-center"
+        >
+          <ul class="my-4 md:my-0 cursor-pointer">
+            <span class="text-2xl font-bold ">| Quicks</span>
+            <li class="flex justify-center md:justify-start pe-7 py-2 md:px-0 hover:ps-2 ">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />Home
+            </li>
+            <li class="flex justify-center md:justify-start pe-7 py-2 md:px-0 hover:ps-2 ">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />About
+            </li>
+            <li class="flex justify-center md:justify-start pe-10 py-2 md:px-0 hover:ps-2">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />FAQ
+            </li>
+            <li class="flex justify-center md:justify-start ps-3 py-2 md:px-0 hover:ps-2">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />Get
+              Started
+            </li>
+            <li class="flex justify-center md:justify-start pe-4 py-2 md:px-0 hover:ps-2 ">
+              <img
+                src="./images/arrow.svg"
+                alt="arrow"
+                class="w-3 me-1"
+              />Videos
+            </li>
+          </ul>
+          <ul class="my-4 md:my-0 cursor-pointer">
+            <span class="text-2xl font-bold cursor-pointer">| Quicks</span>
+            <li class="flex justify-center md:justify-start pe-7 py-2 md:px-0 hover:ps-2">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />Home
+            </li>
+            <li class="flex justify-center md:justify-start pe-7 py-2 md:px-0 hover:ps-2">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />About
+            </li>
+            <li class="flex justify-center md:justify-start pe-10 py-2 md:px-0 hover:ps-2">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />FAQ
+            </li>
+            <li class="flex justify-center md:justify-start ps-3 py-2 md:px-0 hover:ps-2">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />Get
+              Started
+            </li>
+            <li class="flex justify-center md:justify-start pe-4 py-2 md:px-0 hover:ps-2">
+              <img
+                src="./images/arrow.svg"
+                alt="arrow"
+                class="w-3 me-1"
+              />Videos
+            </li>
+          </ul>
+          <ul class="my-4 md:my-0 cursor-pointer">
+            <span class="text-2xl font-bold">| Quicks</span>
+            <li class="flex justify-center md:justify-start pe-7 py-2 md:px-0 hover:ps-2">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />Home
+            </li>
+            <li class="flex justify-center md:justify-start pe-7 py-2 md:px-0 hover:ps-2">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />About
+            </li>
+            <li class="flex justify-center md:justify-start pe-10 py-2 md:px-0 hover:ps-2">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />FAQ
+            </li>
+            <li class="flex justify-center md:justify-start ps-3 py-2 md:px-0 hover:ps-2">
+              <img src="./images/arrow.svg" alt="arrow" class="w-3 me-1" />Get
+              Started
+            </li>
+            <li class="flex justify-center md:justify-start pe-4 py-2 md:px-0 hover:ps-2">
+              <img
+                src="./images/arrow.svg"
+                alt="arrow"
+                class="w-3 me-1"
+              />Videos
+            </li>
+          </ul>
+        </div>
+        <div class="text-center">
+          <a href="#"
+            ><i
+              class="fa-brands fa-facebook-f text-2xl m-2"
+              style="color: #ffffff"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-twitter text-2xl m-2"
+              style="color: #ffffff"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-google-plus-g text-2xl m-2"
+              style="color: #ffffff"
+              ;
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-instagram text-2xl m-2"
+              style="color: #ffffff"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-regular fa-envelope text-2xl m-2"
+              style="color: #ffffff"
+            ></i
+          ></a>
+        </div>
+        <div class="text-center underline decoration-2 text-white pb-4 cursor-pointer">
+          <p class="text-xl">example@gmail.com</p>
+        </div>
+        <div class="text-center text-white pb-5 cursor-pointer">
+          <p class="text-lg">&copy; All Right Reversed. Sunlimetech</p>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+        e.name === "menu"
+          ? ((e.name = "close"),
+            list.classList.add("top-[80px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("opacity-100"));
+      }
+    </script>
+  </body>
+</html>

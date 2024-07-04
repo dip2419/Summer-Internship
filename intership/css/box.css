@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.box{
+    width: 300px;
+    margin: 50px;
+    padding: 50px;
+    border: 10px solid;
+    text-align: justify;
+    outline: 10px solid rgb(218, 31, 31);
+    outline-offset: 5px;
+    text-decoration: red line-through solid;
+    text-transform: capitalize;
+    text-indent: 20px;
+    /* word-spacing: 5px; */
+    /* letter-spacing: 5px; */
+    /* white-space: nowrap; */
+}
+h1{
+    color: #fff;
+    text-shadow: 2px 2px 2px red, 5px 5px 5px black;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    /* font-variant: small-caps; */
+}
+
+.h1 h1:hover p{
+    display: block;
+}
+ul:hover li{
+    display: block;
+}
+li{
+    display: none;
+    background-color: aqua;
+    width: 10%;
+    padding: 10px;
+}
