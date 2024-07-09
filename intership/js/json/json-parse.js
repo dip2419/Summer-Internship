@@ -1382,4 +1382,4 @@ let data = `[
   ]`
 
   let result = JSON.parse(data)
-  console.log(result[7]['name'] + " " + result[7]['language']);
+  console.log(result[7].name + " " + result[7].language);

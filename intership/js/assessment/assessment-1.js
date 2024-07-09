@@ -22,7 +22,7 @@ console.log(target); // { b:2, a:56}
 
 let arr = [1, 2, 3, 4, 5];
 console.log(arr.push(4)); // => 6
-console.log(arr.push(3) + arr.pop()); // => ?
+console.log(arr.push(3) + arr.pop()); // => 10
 console.log(arr.length); // => 6
 
 let arr11 = [{ k: 34 }, { l: 45 }, { m: 12 }, { n: 5 }, { o: 78 }];
@@ -91,7 +91,7 @@ console.log(year); //  45
 
 let arr10 = [1, 2, 3, 4, 5];
 let arr20 = arr10.map((index) => {
-  index;
+   index;
 });
 console.log(arr10); //[ 1, 2, 3, 4, 5 ]
 console.log(arr20); // [ undefined, undefined, undefined, undefined, undefined ]

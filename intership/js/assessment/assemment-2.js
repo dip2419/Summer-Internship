@@ -8,8 +8,8 @@ function getName(obj, key) {
   return this.obj;
 }
 const obj1 = { name: "demo", age: 23 };
-let name = getName(obj1, "name");
-console.log(name); // undefined
+let name1 = getName(obj1,"name");
+console.log(name1); // undefined
 
 function abc() {
   const ab = () => 40;
@@ -56,6 +56,7 @@ console.log(sortDescending(names));
 let arr = [1, 2, 3];
 let arr2 = [100, 2, 1, 10];
 let out = arr.concat(arr2);
+
 function duplicate(data) {
   return [...new Set(data)];
 }
