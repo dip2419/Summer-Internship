@@ -10,11 +10,12 @@ console.log(fruits1.lastIndexOf("orange"))
 //search method
 let fruits2 = "apple,orange,graphs,orange,banana"
 console.log(fruits2.search("orange"))
-console.log(fruits2.search("orange",13))
+console.log(fruits2.search("orange"))
 
 //match method
-let fruits3 = "apple,orange,graphs,orange,banana"
-console.log(fruits3.match("an"))
+let fruits3 = "apple,orange,graphs,orange"
+let res = fruits3.matchAll("an")
+console.log(Array.from(res));
 console.log(fruits3.match(/an/))
 console.log(fruits3.match(/An/i))
 console.log(fruits3.match(/an/g))
@@ -22,7 +23,7 @@ console.log(fruits3.match(/an/g))
 //include method
 let fruits4 = "apple,orange,graphs,orange,banana"
 console.log(fruits4.includes("orange"))
-console.log(fruits4.includes("orange", 12))
+console.log(fruits4.includes("orange", 20))
 
 //startWith method
 let intro = "My name is deep patel"

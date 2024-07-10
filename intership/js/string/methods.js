@@ -60,8 +60,14 @@ console.log(alphabet.split("m"))
 
 //padStart method
 let pad = "5"
-console.log(pad.padStart("5", "1"))
+console.log(pad.padStart(5, "1"))
 
 //padEnd method
 let pad1 = "5"
 console.log(pad.padEnd("5", "1"))
+
+let aa = "deep patel"
+console.log(aa.replaceAll("e","a"));
+
+let str = "Apple, Banana, Kiwi";
+console.log(str.substr(0,5));
