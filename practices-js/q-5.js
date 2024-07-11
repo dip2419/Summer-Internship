@@ -54,6 +54,7 @@ function findMostCommonGenre(books) {
     book.genres.forEach((genre) => {
       if (genreCount[genre]) {
         genreCount[genre]++;
+      
       } else {
         genreCount[genre] = 1;
       }
@@ -86,3 +87,24 @@ const sorted = filterYear
   .sort((a, b) => a.title.localeCompare(b.title));
 console.log(sorted);
 
+const input =  [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
+const res1 = [...new Set(input)]
+console.log(res1);
+
+function findMissingNumber(arr) {
+  const n = arr.length + 1;
+  const sumOfFirstN = (n * (n + 1)) / 2;
+
+  let sumOfArray = 0;
+  for (let i = 0; i < n - 1; i++) {
+    sumOfArray = sumOfArray + arr[i];
+  }
+  console.log(sumOfArray);
+  let missingNumber = sumOfFirstN - sumOfArray;
+
+  return missingNumber;
+}
+
+const arr1 = [4, 1, 3];
+const missingNumber = findMissingNumber(arr1);
+console.log("Missing Number: ", missingNumber);
