@@ -1,10 +1,6 @@
-var string = "Patel Nirav";
-
-var reverseallstrings = reverseWord(string, "");
-
-var output = reverseWord(reverseallstrings, " ");
+const input = "Patel Nirav";
+const output = input
+  .split(" ")
+  .map((word) => word.split("").reverse().join(""))
+  .join(" ");
 console.log(output);
-
-function reverseWord(string, separator) {
-  return string.split(separator).reverse().join(separator);
-}
