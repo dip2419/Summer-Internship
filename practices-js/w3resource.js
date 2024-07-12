@@ -22,15 +22,17 @@ for (let year = 1900; year <= 2024; year++) {
   }
 }
 
-
 function celsiusToFahrenheit(val) {
-    return  (val*9/5) + 32
+  return (val * 9) / 5 + 32;
 }
 let result = celsiusToFahrenheit(110);
-console.log(result + '\xB0F');
+console.log(result + "\xB0F");
 
 function ftoc(val) {
-    return (val - 32) * 5/9
+  return ((val - 32) * 5) / 9;
 }
-let res = ftoc(100)
-console.log(res + '\xB0C');
+let res = ftoc(100);
+console.log(res + "\xB0C");
+
+const a = [7, 9, 0, -2];
+console.log(a.findlast());   
